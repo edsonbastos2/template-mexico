@@ -28,9 +28,15 @@ a{
     height: 20px;
 }
 
+
+.header{
+    height: 100px;
+    background-color: var(--color-full);
+}
 .logo img{
     width: 80px;
     height: 80px;
+    display: block;
 }
 
 .container{
@@ -41,8 +47,19 @@ a{
 .menu--header{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 .nav--menu--ul{
     display: flex;
+}
+
+.nav--menu--ul li{
+    margin-right: 10px;
+}
+
+.nav--menu--ul li a{
+    padding: 10px;
+    color: var(--primary-color);
+    font-size: 18px;
 }
