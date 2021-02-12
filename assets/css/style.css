@@ -12,8 +12,8 @@
 }
 
 body{
-    /* font-family: 'Open Sans', sans-serif; */
-    font-family: 'Oswald', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    /* font-family: 'Oswald', sans-serif; */
 }
 
 ul,li{
@@ -36,7 +36,7 @@ a{
 .logo img{
     width: 80px;
     height: 80px;
-    display: block;
+    margin-top: 10px;
 }
 
 .container{
@@ -48,6 +48,7 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex: 1;
 }
 
 .nav--menu--ul{
@@ -62,4 +63,67 @@ a{
     padding: 10px;
     color: var(--primary-color);
     font-size: 18px;
+}
+
+form input{
+    font-size: 16px;
+    border: 1px solid var(--primary-color);
+    padding: 10px 16px;
+    width: 300px;
+    background: transparent;
+    outline: 0;
+}
+
+form button{
+    background: none;
+    border: none;
+    margin-left: -30px;
+    cursor: pointer;
+}
+
+input::placeholder{
+    color: var(--primary-color);
+}
+
+/* Banner */
+
+.banner--content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.banner--content h1{
+    font-size: 6rem;
+    font-family: 'Oswald', sans-serif;
+    color: var(--seconds-color);
+    text-shadow: 2px 2px 2px #242424;
+}
+
+.banner--content p{
+    width: 350px;
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: aliceblue;
+    line-height: 30px;
+    letter-spacing: 2px;
+}
+
+.banner--content a{
+    background-color: var(--seconds-color);
+    padding: 10px 20px;
+    color: var(--color-full);
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    width: 100px;
+}
+
+.banner{
+    height: 100vh;
+    background-image: url(../img/tortilhas.jpg);
+    background-position: center right;
+    background-size: cover;
 }
